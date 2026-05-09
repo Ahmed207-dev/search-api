@@ -1,0 +1,45 @@
+body {
+  background-color: black;
+  color: white;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#inp {
+  padding: 12px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1); /* شفافية */
+  backdrop-filter: blur(10px); /* تأثير التغبيش */
+  color: white;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+#sumbit {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+#sumbit:hover {
+  background-color: rgba(0, 0, 0, 0.69);
+}
+#inp::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.box {
+  background-color: #888;
+  padding: 30px;
+  border-radius: 50px;
+}
+#inp:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #00d2ff; 
+  box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+}
