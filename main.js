@@ -16,9 +16,9 @@ async function ajax() {
       let coin = data.find((item) => item.id === userValue);
 
       if (coin) {
-        resultDiv.innerHTML = `<h3> ${coin.name}  {${coin.symbol}}</h3> 
-        <p> this price : ${coin.current_price} </P>
-        <img src="${coin.image}" width="50px" >
+        resultDiv.innerHTML = `<h3> name : ${coin.name}  {${coin.symbol}}</h3> 
+         <p class = "price"> this price : ${coin.current_price} $ </P>
+        <img src=" ${coin.image}" width="50px" >
         `;
       } else {
         resultDiv.innerHTML = `<p style="color: red;">Coin not found! Try "bitcoin" or "ethereum"</p>`;
